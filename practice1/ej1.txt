@@ -1,0 +1,21 @@
+valor de i1:
+3
+valor de i2:
+5
+valor de i3:
+8
+16
+Python is awesome
+valor de x: Naranja, valor de y: Naranja, valor de z: Naranja
+1.6
+3
+entero i3:
+9
+variable f3:
+9.5
+el valor de
+13
+más
+-0.5
+es:
+12.5
