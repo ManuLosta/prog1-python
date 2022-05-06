@@ -18,7 +18,7 @@ def checkLists(list1, list2):
     return list1[2] == list2[2]
 
 def listOfLists(list):
-    return [list[0][:2], list[1][1:4], list[2][len(list[2]) - 2:]] 
+    return [list[0][:2], list[1][1:4], list[2][-2:]] 
 
 print(removeElements(rect1))
 print(addElements(rect1))
