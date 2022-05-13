@@ -21,15 +21,14 @@ def put(list, string):
     else:
         return -1
 
-def remove(list, string, index = 0, items_deleted = 0):
-    new_index, deletes = index, items_deleted
-    if len(list) == index:
-        return deletes
-    if list[index] == string:
+def remove(list, string, index = 0):
+    if index == len(list):
+        return 0
+    elif list[index] == string:
         del list[index]
-        new_index = index - 1
-        deletes += 1
-    remove(list, string, new_index + 1, deletes)
+        return 1 + remove(list, string, index)
+    else:
+        return remove(list, string, index + 1)
 
 
 print(indexOfByIndex(sample_list, 'Green', 2))

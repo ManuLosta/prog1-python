@@ -7,7 +7,7 @@ def generateMatrix():
 
     for i in range(n):
         for j in range(n):
-            os.system('cls' if os.name=='nt' else 'clear')
+            clearConsole()
             printMatrix(matrix)
             matrix[i][j] = float(input(f"\n\nIngrese el valor de a{i + 1}{j + 1}: "))
     
@@ -49,9 +49,13 @@ def generateTemplate(n):
         template.append(row)
     return template
 
-def main():
-    matrix = generateMatrix()
+def clearConsole():
     os.system('cls' if os.name=='nt' else 'clear')
+
+def main():
+    clearConsole()
+    matrix = generateMatrix()
+    clearConsole()
     print("Insertada la matriz: ")
     printMatrix(matrix)
     print("\n\nSu determinante es: ")
